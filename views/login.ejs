@@ -1,0 +1,23 @@
+<%- include('partials/header'); -%>
+
+<!-- login form -->
+<form action="/login" method="POST">
+  <!-- form title -->
+  <h2>Log in</h2>
+
+  <!-- email field -->
+  <label for="email">Email</label>
+  <input type="text" name="email" required />
+  <div class="email error"><% if(errors){%>   <%= errors.email %> <%}%></div>
+  <!-- password field -->
+  <label for="password">Password</label>
+  <input type="password" name="password" required />
+  <div class="password error"><% if(errors){%>   <%= errors.password %> <%}%></div>
+
+  <button>Log in</button>
+
+</form>
+<div class="forgot"><a href="/reset-password">Forgot Password ?</a> </div>
+<!-- end of form -->
+
+<%- include('partials/footer'); -%>

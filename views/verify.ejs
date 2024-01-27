@@ -1,0 +1,20 @@
+<%- include('partials/header'); -%>
+
+
+<h1>
+
+    please verify your email 
+
+    
+</h1>
+<% if ( expressFlash.length > 0 ) { %>
+    <p><strong>CHECK YOUR EMAIL</strong> <%= expressFlash %></p>
+    <% } %>
+
+
+<%- include('partials/footer'); -%>
+
+<script>
+
+    let expressFlash;
+</script>
